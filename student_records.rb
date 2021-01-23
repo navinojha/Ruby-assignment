@@ -17,8 +17,21 @@ def passing_marks(hash_array,name)
     end
 end
 
+# Update the percentage of each student in the hash with percentage hash.
+
+def percentage_add(hash_array)
+    hash_array.each do |student|
+        per = student[:marks]
+        p per
+        student[:percentage] = (per*100)/100
+    end
+end
+
+
 name = "Navin"
 passing_marks(hash_array,name)
+
+puts percentage_add(hash_array)
 
 # Method 2
 
