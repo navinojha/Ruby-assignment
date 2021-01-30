@@ -18,8 +18,8 @@ p multiply_by_two(my_proc)
 
 # Lambda Example
 
-def multiply_by_three(m_proc)
-    m_proc.call
+def multiply_by_three(m_lamda)
+    m_lamda.call
 end
 
 my_lamda = -> { [1,2,3].each do |x| puts x*3 end }
