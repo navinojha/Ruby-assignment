@@ -1,20 +1,18 @@
 
 # Implementation of map function
 class Array
-    def maap()
+    def maap
         output = []
         if block_given?
             self.each { |e| output << yield(e) }
-        else
-            output = to_enum :maap
         end
         output
     end
 end
 
-p [1,2,3,4].to_enum
+#p [1,2,3,4].to_enum
 
-[1,2,3].maap { |num| puts num*2}
+[1,2,3,4].maap { |num| puts num*2}
 
 
 # class Array
